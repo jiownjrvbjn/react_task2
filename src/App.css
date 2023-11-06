@@ -1,0 +1,127 @@
+body {
+  background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.dark-mode .calculator {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-mode .calculator {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-mode .calculator {
+  background-color: #333;
+  color: #fff;
+}
+
+.light-mode .calculator {
+  background-color: #fff;
+  color: #333;
+}
+
+.mode-toggle {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.display {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+.buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+.dark-mode .buttons button {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .buttons button:hover {
+  background-color: #444;
+}
+
+.buttons button.operands {
+  background-color: #f0f0f0;
+}
+
+.buttons button.operators {
+  background-color: #f5a623;
+  color: #fff;
+}
+
+.buttons button.operators:hover {
+  background-color: #e49019;
+}
+
+.buttons button.clear {
+  background-color: #e57373;
+  color: #fff;
+}
+
+.buttons button.clear:hover {
+  background-color: #d32f2f;
+}
+
+.buttons button.equals {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.buttons button.equals:hover {
+  background-color: #388e3c;
+}
+
+@media screen and (max-width: 400px) {
+  .calculator {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
